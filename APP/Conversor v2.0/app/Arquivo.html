@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>daltek Soluções</title>
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="">
+    <form name="meuForm" method="post" id="formulario">
+        <div class="box">
+            <div>
+            <a href="https://www.dalteksolucoes.com.br/"><img src="../img/daltek.jpeg"  height="250" width="300" ></a>
+            </div>
+            <label>
+                <span>Os: &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp</span>
+                <!-- <textarea rows="1.5" cols="30" maxlength="50"></textarea> -->
+                <input type="text" class="input_text" placeholder="Ordem de serviço"/>  
+            </label>
+    
+            <label>
+                 <span>Cliente: </span>
+                <input type="text" class="input_text" placeholder="Nome do cliente"/>
+             </label>
+    
+            <label>
+                 <span>Data: &nbsp &nbsp</span>
+                <input type="date" class="input_text" placeholder="DD/MM/AAAA"/>
+            </label>
+        <div>
+            <br>
+        </div>
+        </div>
+        <div class="box">    
+            <label>
+                <span >Técnico:&nbsp &nbsp &nbsp</span>
+                <!-- <textarea rows="1.5" cols="25" maxlength="50"></textarea> -->
+                <input type="text" class="input_text" placeholder="Nome do técnico"/>    
+            </label>    
+            <label>
+                 <span>Tipo:  &nbsp &nbsp</span>
+                <input type="text" class="input_text" placeholder="Tipo"/>
+             </label>    
+            <label>
+                 <span>Modelo:</span>
+                <input type="text" class="input_text" placeholder="Modelo da bateria"/>
+            </label> 
+            <div>
+                <br>
+            </div>
+            <div class="box">    
+                <label>
+                    <span >Fabricação:</span>
+                    <!-- <textarea rows="1.5" cols="25" maxlength="50"></textarea> -->
+                    <input type="text" placeholder="DD/MM/AAAA"/>        
+                </label>        
+                <label>
+                     <span>Banco:&nbsp</span>
+                    <input type="text" placeholder="Banco"/>
+                 </label>
+
+            <div>
+                <br>
+            </div>
+            <div class="obs">
+                <span>Observação</span>               
+                <input type="text1" placeholder="Observação"/>
+            </div>   
+    
+        <div>
+            <button onclick="print()" class="print">Imprimir</button>
+        </div>
+        <div>_____________________________________________________________________________________________
+        </div>
+        <div>
+            <input type="file" class="print" id="csvFileInput" style="padding-bottom: 15px">
+            <table id="csvRoot"></table>
+        </div>
+        <script src="../node_modules/papaparse/papaparse.js"></script>
+        <script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="../node_modules/popper.js/dist/popper.min.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="../node_modules/moment/moment.js"></script>
+        <script src="https://momentjs.com/downloads/moment.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
